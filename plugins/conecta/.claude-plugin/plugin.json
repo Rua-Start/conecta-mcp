@@ -1,0 +1,19 @@
+{
+  "name": "conecta",
+  "version": "0.3.0",
+  "description": "Acesso aos módulos e operações do Conecta.RUÁ.",
+  "author": {
+    "name": "Grupo RUÁ"
+  },
+  "homepage": "https://github.com/Rua-Start/conecta-mcp",
+  "repository": "https://github.com/Rua-Start/conecta-mcp",
+  "license": "Proprietary",
+  "keywords": [
+    "conecta",
+    "scrum",
+    "comercial",
+    "servicos",
+    "crachas"
+  ],
+  "mcpServers": "./.mcp.json"
+}

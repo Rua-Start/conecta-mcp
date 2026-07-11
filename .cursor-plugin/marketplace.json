@@ -1,0 +1,16 @@
+{
+  "name": "conecta-rua",
+  "owner": {
+    "name": "Grupo RUÁ"
+  },
+  "metadata": {
+    "description": "Integrações oficiais do Conecta.RUÁ para Cursor."
+  },
+  "plugins": [
+    {
+      "name": "conecta",
+      "source": "plugins/conecta",
+      "description": "Acesse Scrum, Comercial, Serviços, Crachás e recursos corporativos do Conecta.RUÁ."
+    }
+  ]
+}

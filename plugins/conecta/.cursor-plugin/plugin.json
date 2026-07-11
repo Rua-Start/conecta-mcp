@@ -1,0 +1,27 @@
+{
+  "name": "conecta",
+  "displayName": "Conecta.RUÁ",
+  "version": "0.3.0",
+  "description": "Acesse e opere Scrum, Comercial, Serviços, Crachás e recursos corporativos do Conecta.RUÁ.",
+  "author": {
+    "name": "Grupo RUÁ"
+  },
+  "homepage": "https://github.com/Rua-Start/conecta-mcp",
+  "repository": "https://github.com/Rua-Start/conecta-mcp",
+  "license": "Proprietary",
+  "logo": "assets/logo.png",
+  "keywords": [
+    "conecta",
+    "scrum",
+    "comercial",
+    "servicos",
+    "crachas",
+    "mcp"
+  ],
+  "category": "productivity",
+  "tags": [
+    "grupo-rua",
+    "internal-tools"
+  ],
+  "mcpServers": "./mcp.json"
+}
