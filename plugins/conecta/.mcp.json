@@ -1,24 +1,8 @@
 {
   "mcpServers": {
-    "conecta_scrum": {
+    "conecta": {
       "type": "http",
-      "url": "https://conecta.rua.com.br/mcp/scrum"
-    },
-    "conecta_comercial": {
-      "type": "http",
-      "url": "https://conecta.rua.com.br/mcp/comercial"
-    },
-    "conecta_core": {
-      "type": "http",
-      "url": "https://conecta.rua.com.br/mcp/core"
-    },
-    "conecta_servicos": {
-      "type": "http",
-      "url": "https://conecta.rua.com.br/mcp/servicos"
-    },
-    "conecta_crachas": {
-      "type": "http",
-      "url": "https://conecta.rua.com.br/mcp/crachas"
+      "url": "https://conecta.rua.com.br/mcp/conecta"
     }
   }
 }

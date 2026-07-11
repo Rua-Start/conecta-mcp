@@ -1,8 +1,8 @@
 # Conecta.RUÁ para Codex
 
-Plugin do Codex que conecta aos servidores MCP do Conecta.RUÁ.
+Plugin do Codex que conecta ao servidor MCP unificado do Conecta.RUÁ.
 
-## Servidores incluídos
+## Módulos incluídos
 
 - Scrum
 - Comercial
@@ -24,7 +24,7 @@ Depois, instale o plugin:
 codex plugin add conecta@conecta-rua
 ```
 
-Na primeira utilização, o Codex abrirá a autenticação OAuth do Conecta. As ferramentas disponíveis respeitam o usuário autenticado e suas permissões no sistema.
+Na primeira utilização, o Codex abrirá uma única autenticação OAuth do Conecta. Depois da autorização, Scrum, Comercial, Core, Serviços e Crachás ficam disponíveis na mesma conexão, sempre respeitando o usuário autenticado e suas permissões no sistema.
 
 ## Segurança
 
