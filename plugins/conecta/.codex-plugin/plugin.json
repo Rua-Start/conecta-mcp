@@ -1,6 +1,6 @@
 {
   "name": "conecta",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Acesso aos módulos e operações do Conecta.RUÁ.",
   "author": {
     "name": "Grupo RUÁ",
@@ -27,7 +27,9 @@
       "Read",
       "Write"
     ],
-    "brandColor": "#663399",
+    "brandColor": "#286965",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
     "defaultPrompt": [
       "Mostre minhas tasks em andamento",
       "Consulte os dados disponíveis no Conecta",
