@@ -1,0 +1,38 @@
+{
+  "name": "conecta",
+  "version": "0.1.0",
+  "description": "Acesso aos módulos e operações do Conecta.RUÁ.",
+  "author": {
+    "name": "Grupo RUÁ",
+    "url": "https://rua.com.br"
+  },
+  "homepage": "https://github.com/Rua-Start/conecta-mcp",
+  "repository": "https://github.com/Rua-Start/conecta-mcp",
+  "license": "Proprietary",
+  "keywords": [
+    "conecta",
+    "scrum",
+    "comercial",
+    "servicos",
+    "crachas"
+  ],
+  "interface": {
+    "displayName": "Conecta.RUÁ",
+    "shortDescription": "Acesse e opere os módulos do Conecta",
+    "longDescription": "Consulte e gerencie Scrum, Comercial, Serviços, Crachás e recursos corporativos do Conecta.RUÁ.",
+    "developerName": "Grupo RUÁ",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "brandColor": "#663399",
+    "defaultPrompt": [
+      "Mostre minhas tasks em andamento",
+      "Consulte os dados disponíveis no Conecta",
+      "Ajude a organizar meu trabalho no Scrum"
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}
