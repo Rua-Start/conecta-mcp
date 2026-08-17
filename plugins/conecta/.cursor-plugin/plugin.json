@@ -1,8 +1,8 @@
 {
   "name": "conecta",
   "displayName": "Conecta.RUÁ",
-  "version": "0.3.0",
-  "description": "Acesse e opere Scrum, Comercial, Serviços, Crachás e recursos corporativos do Conecta.RUÁ.",
+  "version": "0.4.0",
+  "description": "Acesse e opere Core, Scrum, Comercial, Serviços, Contratos, Crachás e Manual do Conecta.RUÁ.",
   "author": {
     "name": "Grupo RUÁ"
   },
@@ -15,7 +15,9 @@
     "scrum",
     "comercial",
     "servicos",
+    "contratos",
     "crachas",
+    "manual",
     "mcp"
   ],
   "category": "productivity",

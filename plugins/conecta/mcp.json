@@ -1,8 +1,32 @@
 {
   "mcpServers": {
-    "conecta": {
+    "conecta-core": {
       "type": "http",
-      "url": "https://conecta.rua.com.br/mcp/conecta"
+      "url": "https://conecta.rua.com.br/mcp/core"
+    },
+    "conecta-scrum": {
+      "type": "http",
+      "url": "https://conecta.rua.com.br/mcp/scrum"
+    },
+    "conecta-comercial": {
+      "type": "http",
+      "url": "https://conecta.rua.com.br/mcp/comercial"
+    },
+    "conecta-servicos": {
+      "type": "http",
+      "url": "https://conecta.rua.com.br/mcp/servicos"
+    },
+    "conecta-contratos": {
+      "type": "http",
+      "url": "https://conecta.rua.com.br/mcp/contratos"
+    },
+    "conecta-crachas": {
+      "type": "http",
+      "url": "https://conecta.rua.com.br/mcp/crachas"
+    },
+    "conecta-manual": {
+      "type": "http",
+      "url": "https://conecta.rua.com.br/mcp/manual"
     }
   }
 }

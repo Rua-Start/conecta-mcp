@@ -1,6 +1,6 @@
 {
   "name": "conecta",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Acesso aos módulos e operações do Conecta.RUÁ.",
   "author": {
     "name": "Grupo RUÁ"
@@ -13,7 +13,9 @@
     "scrum",
     "comercial",
     "servicos",
-    "crachas"
+    "contratos",
+    "crachas",
+    "manual"
   ],
   "mcpServers": "./.mcp.json"
 }

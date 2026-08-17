@@ -8,7 +8,7 @@
     {
       "name": "conecta",
       "source": "./plugins/conecta",
-      "description": "Acesse Scrum, Comercial, Serviços, Crachás e recursos corporativos do Conecta.RUÁ."
+      "description": "Acesse Core, Scrum, Comercial, Serviços, Contratos, Crachás e Manual do Conecta.RUÁ."
     }
   ]
 }

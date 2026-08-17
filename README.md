@@ -1,6 +1,6 @@
 # Conecta.RUÁ para agentes de código
 
-Plugin oficial que conecta Codex, Claude Code e Cursor ao servidor MCP unificado do Conecta.RUÁ.
+Plugin oficial que conecta Codex, Claude Code e Cursor aos servidores MCP especializados do Conecta.RUÁ.
 
 ## Módulos incluídos
 
@@ -8,12 +8,20 @@ Plugin oficial que conecta Codex, Claude Code e Cursor ao servidor MCP unificado
 - Scrum
 - Comercial
 - Serviços
+- Contratos
 - Crachás
+- Manual
 
-Todos os clientes usam o mesmo endpoint:
+Todos os clientes recebem um servidor MCP por domínio:
 
 ```text
-https://conecta.rua.com.br/mcp/conecta
+/mcp/core
+/mcp/scrum
+/mcp/comercial
+/mcp/servicos
+/mcp/contratos
+/mcp/crachas
+/mcp/manual
 ```
 
 O plugin não contém tokens nem credenciais. Cada cliente abre o OAuth do Conecta e recebe apenas as ferramentas permitidas para o usuário autenticado.
@@ -35,7 +43,7 @@ codex plugin add conecta@conecta-rua
 Quando solicitado, autorize o MCP no navegador. Para refazer a autorização manualmente:
 
 ```bash
-codex mcp login conecta
+codex mcp login conecta-core
 ```
 
 ## Claude Code
@@ -70,9 +78,9 @@ Como alternativa de instalação direta do MCP, adicione esta configuração ao 
 ```json
 {
   "mcpServers": {
-    "conecta": {
+    "conecta-contratos": {
       "type": "http",
-      "url": "https://conecta.rua.com.br/mcp/conecta"
+      "url": "https://conecta.rua.com.br/mcp/contratos"
     }
   }
 }
@@ -94,4 +102,4 @@ Como alternativa de instalação direta do MCP, adicione esta configuração ao 
 - Nenhuma credencial é versionada.
 - O fluxo usa OAuth com PKCE e registro dinâmico de cliente.
 - Callbacks são limitados a loopback e aos callbacks oficiais dos clientes suportados.
-- Os endpoints MCP especializados continuam disponíveis apenas para retrocompatibilidade.
+- O endpoint agregado `/mcp/conecta` permanece disponível para retrocompatibilidade, mas não é carregado pelo plugin.
