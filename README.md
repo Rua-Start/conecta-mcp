@@ -1,6 +1,6 @@
 # Conecta.RUÁ para agentes de código
 
-Plugin oficial que conecta Codex, Claude Code e Cursor aos servidores MCP especializados do Conecta.RUÁ.
+Plugin oficial que conecta Codex, Claude Code e Cursor ao servidor MCP agregado do Conecta.RUÁ.
 
 ## Módulos incluídos
 
@@ -12,19 +12,13 @@ Plugin oficial que conecta Codex, Claude Code e Cursor aos servidores MCP especi
 - Crachás
 - Manual
 
-Todos os clientes recebem um servidor MCP por domínio:
+Todos os clientes recebem um único servidor MCP agregado:
 
 ```text
-/mcp/core
-/mcp/scrum
-/mcp/comercial
-/mcp/servicos
-/mcp/contratos
-/mcp/crachas
-/mcp/manual
+/mcp/conecta
 ```
 
-O plugin não contém tokens nem credenciais. Cada cliente abre o OAuth do Conecta e recebe apenas as ferramentas permitidas para o usuário autenticado.
+O plugin não contém tokens nem credenciais. Cada cliente abre uma única autorização OAuth do Conecta e recebe apenas as ferramentas permitidas para o usuário autenticado.
 
 ## Codex
 
@@ -43,7 +37,7 @@ codex plugin add conecta@conecta-rua
 Quando solicitado, autorize o MCP no navegador. Para refazer a autorização manualmente:
 
 ```bash
-codex mcp login conecta-core
+codex mcp login conecta
 ```
 
 ## Claude Code
@@ -78,9 +72,9 @@ Como alternativa de instalação direta do MCP, adicione esta configuração ao 
 ```json
 {
   "mcpServers": {
-    "conecta-contratos": {
+    "conecta": {
       "type": "http",
-      "url": "https://conecta.rua.com.br/mcp/contratos"
+      "url": "https://conecta.rua.com.br/mcp/conecta"
     }
   }
 }
@@ -102,4 +96,4 @@ Como alternativa de instalação direta do MCP, adicione esta configuração ao 
 - Nenhuma credencial é versionada.
 - O fluxo usa OAuth com PKCE e registro dinâmico de cliente.
 - Callbacks são limitados a loopback e aos callbacks oficiais dos clientes suportados.
-- O endpoint agregado `/mcp/conecta` permanece disponível para retrocompatibilidade, mas não é carregado pelo plugin.
+- O endpoint agregado `/mcp/conecta` evita autorizações OAuth concorrentes e mantém uma única sessão para todos os módulos.
