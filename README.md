@@ -1,6 +1,6 @@
 # Conecta.RUÁ para agentes de código
 
-Plugin oficial que conecta Codex, Claude Code e Cursor ao servidor MCP agregado do Conecta.RUÁ.
+Plugin oficial que conecta Codex, Claude Code e Cursor aos servidores MCP especializados do Conecta.RUÁ.
 
 ## Módulos incluídos
 
@@ -12,13 +12,19 @@ Plugin oficial que conecta Codex, Claude Code e Cursor ao servidor MCP agregado 
 - Crachás
 - Manual
 
-Todos os clientes recebem um único servidor MCP agregado:
+Todos os clientes recebem um servidor MCP por domínio:
 
 ```text
-/mcp/conecta
+/mcp/core
+/mcp/scrum
+/mcp/comercial
+/mcp/servicos
+/mcp/contratos
+/mcp/crachas
+/mcp/manual
 ```
 
-O plugin não contém tokens nem credenciais. Cada cliente abre uma única autorização OAuth do Conecta e recebe apenas as ferramentas permitidas para o usuário autenticado.
+O plugin não contém tokens nem credenciais. Cada cliente abre o OAuth do Conecta por servidor e recebe apenas as ferramentas permitidas para o usuário autenticado. Autorize os servidores em sequência; o Cursor limita o catálogo a cerca de 50 tools por servidor, então o plugin não usa o endpoint agregado `/mcp/conecta`.
 
 ## Codex
 
@@ -37,7 +43,7 @@ codex plugin add conecta@conecta-rua
 Quando solicitado, autorize o MCP no navegador. Para refazer a autorização manualmente:
 
 ```bash
-codex mcp login conecta
+codex mcp login conecta-core
 ```
 
 ## Claude Code
@@ -55,7 +61,7 @@ Instale e recarregue o plugin:
 /reload-plugins
 ```
 
-Abra `/mcp`, selecione o servidor do plugin Conecta e conclua o login no navegador quando aparecer `Needs authentication`.
+Abra `/mcp`, selecione cada servidor do plugin Conecta e conclua o login no navegador quando aparecer `Needs authentication`.
 
 ## Cursor
 
@@ -65,16 +71,40 @@ No Cursor, abra **Settings → Plugins → Marketplaces**, importe o repositóri
 https://github.com/Rua-Start/conecta-mcp
 ```
 
-Depois, instale **Conecta.RUÁ** e conclua o OAuth em **Settings → Tools & MCP** quando o servidor indicar que precisa de login.
+Depois, instale **Conecta.RUÁ** e conclua o OAuth em **Settings → Tools & MCP** para cada servidor (`conecta-core`, `conecta-scrum`, etc.) quando indicar que precisa de login.
 
 Como alternativa de instalação direta do MCP, adicione esta configuração ao arquivo global `~/.cursor/mcp.json`:
 
 ```json
 {
   "mcpServers": {
-    "conecta": {
+    "conecta-core": {
       "type": "http",
-      "url": "https://conecta.rua.com.br/mcp/conecta"
+      "url": "https://conecta.rua.com.br/mcp/core"
+    },
+    "conecta-scrum": {
+      "type": "http",
+      "url": "https://conecta.rua.com.br/mcp/scrum"
+    },
+    "conecta-comercial": {
+      "type": "http",
+      "url": "https://conecta.rua.com.br/mcp/comercial"
+    },
+    "conecta-servicos": {
+      "type": "http",
+      "url": "https://conecta.rua.com.br/mcp/servicos"
+    },
+    "conecta-contratos": {
+      "type": "http",
+      "url": "https://conecta.rua.com.br/mcp/contratos"
+    },
+    "conecta-crachas": {
+      "type": "http",
+      "url": "https://conecta.rua.com.br/mcp/crachas"
+    },
+    "conecta-manual": {
+      "type": "http",
+      "url": "https://conecta.rua.com.br/mcp/manual"
     }
   }
 }
@@ -96,4 +126,4 @@ Como alternativa de instalação direta do MCP, adicione esta configuração ao 
 - Nenhuma credencial é versionada.
 - O fluxo usa OAuth com PKCE e registro dinâmico de cliente.
 - Callbacks são limitados a loopback e aos callbacks oficiais dos clientes suportados.
-- O endpoint agregado `/mcp/conecta` evita autorizações OAuth concorrentes e mantém uma única sessão para todos os módulos.
+- O endpoint agregado `/mcp/conecta` permanece disponível para retrocompatibilidade, mas não é carregado pelo plugin.

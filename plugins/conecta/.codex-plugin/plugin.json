@@ -1,6 +1,6 @@
 {
   "name": "conecta",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Acesso aos módulos e operações do Conecta.RUÁ.",
   "author": {
     "name": "Grupo RUÁ",
@@ -21,7 +21,7 @@
   "interface": {
     "displayName": "Conecta.RUÁ",
     "shortDescription": "Acesse e opere os módulos do Conecta",
-    "longDescription": "Consulte e gerencie Core, Scrum, Comercial, Serviços, Contratos, Crachás e Manual com uma única autenticação no Conecta.RUÁ.",
+    "longDescription": "Consulte e gerencie Core, Scrum, Comercial, Serviços, Contratos, Crachás e Manual por servidores MCP especializados do Conecta.RUÁ.",
     "developerName": "Grupo RUÁ",
     "category": "Productivity",
     "capabilities": [
