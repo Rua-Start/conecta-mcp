@@ -1,0 +1,39 @@
+{
+  "name": "conecta-external-databases",
+  "version": "0.1.0",
+  "description": "Configuração, catálogo e consultas seguras em bancos externos.",
+  "author": {
+    "name": "Grupo RUÁ",
+    "url": "https://rua.com.br"
+  },
+  "homepage": "https://github.com/Rua-Start/conecta-mcp",
+  "repository": "https://github.com/Rua-Start/conecta-mcp",
+  "license": "Proprietary",
+  "keywords": [
+    "conecta",
+    "database",
+    "catalogo",
+    "sql",
+    "mcp"
+  ],
+  "interface": {
+    "displayName": "Conecta.RUÁ — Bancos de Dados Externos",
+    "shortDescription": "Configuração, catálogo e consultas seguras em bancos externos.",
+    "longDescription": "Instale somente o MCP de Bancos de Dados Externos para acessar configuração, catálogo e consultas seguras em bancos externos. As permissões continuam sendo validadas pelo Conecta.RUÁ.",
+    "developerName": "Grupo RUÁ",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "brandColor": "#286965",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "defaultPrompt": [
+      "Liste os bancos externos disponíveis",
+      "Mostre o modelo JSON do dicionário de dados"
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

@@ -1,7 +1,7 @@
 {
-  "name": "conecta",
-  "version": "0.5.0",
-  "description": "Acesso completo aos servidores MCP especializados do Conecta.RUÁ.",
+  "name": "conecta-external-databases",
+  "version": "0.1.0",
+  "description": "Configuração, catálogo e consultas seguras em bancos externos.",
   "author": {
     "name": "Grupo RUÁ"
   },
@@ -10,14 +10,9 @@
   "license": "Proprietary",
   "keywords": [
     "conecta",
-    "ruacio",
     "database",
-    "scrum",
-    "comercial",
-    "servicos",
-    "contratos",
-    "crachas",
-    "manual",
+    "catalogo",
+    "sql",
     "mcp"
   ],
   "mcpServers": "./.mcp.json"

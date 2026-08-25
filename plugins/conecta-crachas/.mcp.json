@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "conecta-crachas": {
+      "type": "http",
+      "url": "https://conecta.rua.com.br/mcp/crachas"
+    }
+  }
+}

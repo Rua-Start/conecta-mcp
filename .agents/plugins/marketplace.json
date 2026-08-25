@@ -1,7 +1,7 @@
 {
   "name": "conecta-rua",
   "interface": {
-    "displayName": "Conecta.RUÁ"
+    "displayName": "Conecta.RU\u00c1"
   },
   "plugins": [
     {
@@ -9,6 +9,114 @@
       "source": {
         "source": "local",
         "path": "./plugins/conecta"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "conecta-core",
+      "source": {
+        "source": "local",
+        "path": "./plugins/conecta-core"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "conecta-ruacio",
+      "source": {
+        "source": "local",
+        "path": "./plugins/conecta-ruacio"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "conecta-external-databases",
+      "source": {
+        "source": "local",
+        "path": "./plugins/conecta-external-databases"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "conecta-scrum",
+      "source": {
+        "source": "local",
+        "path": "./plugins/conecta-scrum"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "conecta-comercial",
+      "source": {
+        "source": "local",
+        "path": "./plugins/conecta-comercial"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "conecta-servicos",
+      "source": {
+        "source": "local",
+        "path": "./plugins/conecta-servicos"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "conecta-contratos",
+      "source": {
+        "source": "local",
+        "path": "./plugins/conecta-contratos"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "conecta-crachas",
+      "source": {
+        "source": "local",
+        "path": "./plugins/conecta-crachas"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "conecta-manual",
+      "source": {
+        "source": "local",
+        "path": "./plugins/conecta-manual"
       },
       "policy": {
         "installation": "AVAILABLE",

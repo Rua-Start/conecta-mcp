@@ -1,0 +1,39 @@
+{
+  "name": "conecta-servicos",
+  "version": "0.1.0",
+  "description": "Chamados e conhecimento de serviços do Conecta.RUÁ.",
+  "author": {
+    "name": "Grupo RUÁ",
+    "url": "https://rua.com.br"
+  },
+  "homepage": "https://github.com/Rua-Start/conecta-mcp",
+  "repository": "https://github.com/Rua-Start/conecta-mcp",
+  "license": "Proprietary",
+  "keywords": [
+    "conecta",
+    "servicos",
+    "chamados",
+    "suporte",
+    "mcp"
+  ],
+  "interface": {
+    "displayName": "Conecta.RUÁ — Serviços",
+    "shortDescription": "Chamados e conhecimento de serviços do Conecta.RUÁ.",
+    "longDescription": "Instale somente o MCP de Serviços para acessar chamados e conhecimento de serviços do conecta.ruá. As permissões continuam sendo validadas pelo Conecta.RUÁ.",
+    "developerName": "Grupo RUÁ",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "brandColor": "#286965",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "defaultPrompt": [
+      "Mostre meus chamados em aberto",
+      "Pesquise uma solução de chamado"
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "conecta-core",
+  "version": "0.1.0",
+  "description": "Identidade, contexto e operações centrais do Conecta.RUÁ.",
+  "author": {
+    "name": "Grupo RUÁ",
+    "url": "https://rua.com.br"
+  },
+  "homepage": "https://github.com/Rua-Start/conecta-mcp",
+  "repository": "https://github.com/Rua-Start/conecta-mcp",
+  "license": "Proprietary",
+  "keywords": [
+    "conecta",
+    "core",
+    "identidade",
+    "contexto",
+    "mcp"
+  ],
+  "interface": {
+    "displayName": "Conecta.RUÁ — Core",
+    "shortDescription": "Identidade, contexto e operações centrais do Conecta.RUÁ.",
+    "longDescription": "Instale somente o MCP de Core para acessar identidade, contexto e operações centrais do conecta.ruá. As permissões continuam sendo validadas pelo Conecta.RUÁ.",
+    "developerName": "Grupo RUÁ",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "brandColor": "#286965",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "defaultPrompt": [
+      "Mostre meu contexto e permissões no Conecta",
+      "Liste as operações centrais disponíveis"
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

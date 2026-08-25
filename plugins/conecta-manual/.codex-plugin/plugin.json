@@ -1,0 +1,38 @@
+{
+  "name": "conecta-manual",
+  "version": "0.1.0",
+  "description": "Pesquisa no Manual do Usuário do Conecta.RUÁ.",
+  "author": {
+    "name": "Grupo RUÁ",
+    "url": "https://rua.com.br"
+  },
+  "homepage": "https://github.com/Rua-Start/conecta-mcp",
+  "repository": "https://github.com/Rua-Start/conecta-mcp",
+  "license": "Proprietary",
+  "keywords": [
+    "conecta",
+    "manual",
+    "documentacao",
+    "ajuda",
+    "mcp"
+  ],
+  "interface": {
+    "displayName": "Conecta.RUÁ — Manual",
+    "shortDescription": "Pesquisa no Manual do Usuário do Conecta.RUÁ.",
+    "longDescription": "Instale somente o MCP de Manual para acessar pesquisa no manual do usuário do conecta.ruá. As permissões continuam sendo validadas pelo Conecta.RUÁ.",
+    "developerName": "Grupo RUÁ",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "brandColor": "#286965",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "defaultPrompt": [
+      "Pesquise como usar um módulo do Conecta",
+      "Mostre a documentação disponível"
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

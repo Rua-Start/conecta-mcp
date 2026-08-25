@@ -1,0 +1,39 @@
+{
+  "name": "conecta-crachas",
+  "version": "0.1.0",
+  "description": "Operações autorizadas de crachás no Conecta.RUÁ.",
+  "author": {
+    "name": "Grupo RUÁ",
+    "url": "https://rua.com.br"
+  },
+  "homepage": "https://github.com/Rua-Start/conecta-mcp",
+  "repository": "https://github.com/Rua-Start/conecta-mcp",
+  "license": "Proprietary",
+  "keywords": [
+    "conecta",
+    "crachas",
+    "acesso",
+    "identificacao",
+    "mcp"
+  ],
+  "interface": {
+    "displayName": "Conecta.RUÁ — Crachás",
+    "shortDescription": "Operações autorizadas de crachás no Conecta.RUÁ.",
+    "longDescription": "Instale somente o MCP de Crachás para acessar operações autorizadas de crachás no conecta.ruá. As permissões continuam sendo validadas pelo Conecta.RUÁ.",
+    "developerName": "Grupo RUÁ",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "brandColor": "#286965",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "defaultPrompt": [
+      "Mostre os crachás disponíveis",
+      "Consulte a situação de um crachá"
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

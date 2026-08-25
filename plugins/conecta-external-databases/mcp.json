@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "conecta-external-databases": {
+      "type": "http",
+      "url": "https://conecta.rua.com.br/mcp/external-databases"
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
-  "name": "conecta",
-  "version": "0.5.0",
-  "description": "Acesso completo aos servidores MCP especializados do Conecta.RUÁ.",
+  "name": "conecta-servicos",
+  "version": "0.1.0",
+  "description": "Chamados e conhecimento de serviços do Conecta.RUÁ.",
   "author": {
     "name": "Grupo RUÁ"
   },
@@ -10,14 +10,9 @@
   "license": "Proprietary",
   "keywords": [
     "conecta",
-    "ruacio",
-    "database",
-    "scrum",
-    "comercial",
     "servicos",
-    "contratos",
-    "crachas",
-    "manual",
+    "chamados",
+    "suporte",
     "mcp"
   ],
   "mcpServers": "./.mcp.json"

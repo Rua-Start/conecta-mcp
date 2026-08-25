@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "conecta-comercial": {
+      "type": "http",
+      "url": "https://conecta.rua.com.br/mcp/comercial"
+    }
+  }
+}

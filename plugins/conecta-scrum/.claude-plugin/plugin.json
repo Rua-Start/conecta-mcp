@@ -1,7 +1,7 @@
 {
-  "name": "conecta",
-  "version": "0.5.0",
-  "description": "Acesso completo aos servidores MCP especializados do Conecta.RUÁ.",
+  "name": "conecta-scrum",
+  "version": "0.1.0",
+  "description": "Projetos, sprints, tasks e conhecimento do Scrum no Conecta.RUÁ.",
   "author": {
     "name": "Grupo RUÁ"
   },
@@ -10,14 +10,9 @@
   "license": "Proprietary",
   "keywords": [
     "conecta",
-    "ruacio",
-    "database",
     "scrum",
-    "comercial",
-    "servicos",
-    "contratos",
-    "crachas",
-    "manual",
+    "tasks",
+    "sprints",
     "mcp"
   ],
   "mcpServers": "./.mcp.json"

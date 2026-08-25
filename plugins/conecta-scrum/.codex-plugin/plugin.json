@@ -1,7 +1,7 @@
 {
-  "name": "conecta",
-  "version": "0.5.0",
-  "description": "Acesso completo aos servidores MCP especializados do Conecta.RUÁ.",
+  "name": "conecta-scrum",
+  "version": "0.1.0",
+  "description": "Projetos, sprints, tasks e conhecimento do Scrum no Conecta.RUÁ.",
   "author": {
     "name": "Grupo RUÁ",
     "url": "https://rua.com.br"
@@ -11,20 +11,15 @@
   "license": "Proprietary",
   "keywords": [
     "conecta",
-    "ruacio",
-    "database",
     "scrum",
-    "comercial",
-    "servicos",
-    "contratos",
-    "crachas",
-    "manual",
+    "tasks",
+    "sprints",
     "mcp"
   ],
   "interface": {
-    "displayName": "Conecta.RUÁ",
-    "shortDescription": "Todos os MCPs especializados do Conecta",
-    "longDescription": "Consulte e gerencie Core, Ruácio, Bancos de Dados Externos, Scrum, Comercial, Serviços, Contratos, Crachás e Manual em uma única instalação.",
+    "displayName": "Conecta.RUÁ — Scrum",
+    "shortDescription": "Projetos, sprints, tasks e conhecimento do Scrum no Conecta.RUÁ.",
+    "longDescription": "Instale somente o MCP de Scrum para acessar projetos, sprints, tasks e conhecimento do scrum no conecta.ruá. As permissões continuam sendo validadas pelo Conecta.RUÁ.",
     "developerName": "Grupo RUÁ",
     "category": "Productivity",
     "capabilities": [
@@ -37,8 +32,7 @@
     "logo": "./assets/logo.png",
     "defaultPrompt": [
       "Mostre minhas tasks em andamento",
-      "Consulte meus contratos",
-      "Liste os recursos disponíveis no Conecta"
+      "Liste as sprints ativas"
     ]
   },
   "mcpServers": "./.mcp.json"

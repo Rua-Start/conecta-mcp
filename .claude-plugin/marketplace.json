@@ -8,7 +8,52 @@
     {
       "name": "conecta",
       "source": "./plugins/conecta",
-      "description": "Acesse Core, Scrum, Comercial, Serviços, Contratos, Crachás e Manual do Conecta.RUÁ."
+      "description": "Acesse todos os MCPs especializados do Conecta.RUÁ."
+    },
+    {
+      "name": "conecta-core",
+      "source": "./plugins/conecta-core",
+      "description": "Identidade, contexto e operações centrais do Conecta.RUÁ."
+    },
+    {
+      "name": "conecta-ruacio",
+      "source": "./plugins/conecta-ruacio",
+      "description": "Dashboards, relatórios e análises do Ruácio."
+    },
+    {
+      "name": "conecta-external-databases",
+      "source": "./plugins/conecta-external-databases",
+      "description": "Configuração, catálogo e consultas seguras em bancos externos."
+    },
+    {
+      "name": "conecta-scrum",
+      "source": "./plugins/conecta-scrum",
+      "description": "Projetos, sprints, tasks e conhecimento do Scrum."
+    },
+    {
+      "name": "conecta-comercial",
+      "source": "./plugins/conecta-comercial",
+      "description": "Clientes e operações comerciais autorizadas."
+    },
+    {
+      "name": "conecta-servicos",
+      "source": "./plugins/conecta-servicos",
+      "description": "Chamados e conhecimento de serviços."
+    },
+    {
+      "name": "conecta-contratos",
+      "source": "./plugins/conecta-contratos",
+      "description": "Consulta e gestão autorizada de contratos."
+    },
+    {
+      "name": "conecta-crachas",
+      "source": "./plugins/conecta-crachas",
+      "description": "Operações autorizadas de crachás."
+    },
+    {
+      "name": "conecta-manual",
+      "source": "./plugins/conecta-manual",
+      "description": "Pesquisa no Manual do Usuário do Conecta."
     }
   ]
 }

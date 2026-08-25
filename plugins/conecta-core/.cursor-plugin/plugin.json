@@ -1,8 +1,8 @@
 {
-  "name": "conecta",
-  "displayName": "Conecta.RUÁ",
-  "version": "0.5.0",
-  "description": "Acesse todos os servidores MCP especializados do Conecta.RUÁ.",
+  "name": "conecta-core",
+  "displayName": "Conecta.RUÁ — Core",
+  "version": "0.1.0",
+  "description": "Identidade, contexto e operações centrais do Conecta.RUÁ.",
   "author": {
     "name": "Grupo RUÁ"
   },
@@ -12,14 +12,9 @@
   "logo": "assets/logo.png",
   "keywords": [
     "conecta",
-    "ruacio",
-    "database",
-    "scrum",
-    "comercial",
-    "servicos",
-    "contratos",
-    "crachas",
-    "manual",
+    "core",
+    "identidade",
+    "contexto",
     "mcp"
   ],
   "category": "productivity",

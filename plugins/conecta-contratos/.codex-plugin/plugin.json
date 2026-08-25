@@ -1,7 +1,7 @@
 {
-  "name": "conecta",
-  "version": "0.5.0",
-  "description": "Acesso completo aos servidores MCP especializados do Conecta.RUÁ.",
+  "name": "conecta-contratos",
+  "version": "0.1.0",
+  "description": "Consulta e gestão autorizada de contratos do Conecta.RUÁ.",
   "author": {
     "name": "Grupo RUÁ",
     "url": "https://rua.com.br"
@@ -11,20 +11,15 @@
   "license": "Proprietary",
   "keywords": [
     "conecta",
-    "ruacio",
-    "database",
-    "scrum",
-    "comercial",
-    "servicos",
     "contratos",
-    "crachas",
-    "manual",
+    "documentos",
+    "gestao",
     "mcp"
   ],
   "interface": {
-    "displayName": "Conecta.RUÁ",
-    "shortDescription": "Todos os MCPs especializados do Conecta",
-    "longDescription": "Consulte e gerencie Core, Ruácio, Bancos de Dados Externos, Scrum, Comercial, Serviços, Contratos, Crachás e Manual em uma única instalação.",
+    "displayName": "Conecta.RUÁ — Contratos",
+    "shortDescription": "Consulta e gestão autorizada de contratos do Conecta.RUÁ.",
+    "longDescription": "Instale somente o MCP de Contratos para acessar consulta e gestão autorizada de contratos do conecta.ruá. As permissões continuam sendo validadas pelo Conecta.RUÁ.",
     "developerName": "Grupo RUÁ",
     "category": "Productivity",
     "capabilities": [
@@ -36,9 +31,8 @@
     "composerIcon": "./assets/icon.png",
     "logo": "./assets/logo.png",
     "defaultPrompt": [
-      "Mostre minhas tasks em andamento",
       "Consulte meus contratos",
-      "Liste os recursos disponíveis no Conecta"
+      "Mostre os contratos que exigem atenção"
     ]
   },
   "mcpServers": "./.mcp.json"

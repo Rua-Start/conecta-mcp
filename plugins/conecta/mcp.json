@@ -4,6 +4,14 @@
       "type": "http",
       "url": "https://conecta.rua.com.br/mcp/core"
     },
+    "conecta-ruacio": {
+      "type": "http",
+      "url": "https://conecta.rua.com.br/mcp/ruacio"
+    },
+    "conecta-external-databases": {
+      "type": "http",
+      "url": "https://conecta.rua.com.br/mcp/external-databases"
+    },
     "conecta-scrum": {
       "type": "http",
       "url": "https://conecta.rua.com.br/mcp/scrum"

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "conecta-ruacio": {
+      "type": "http",
+      "url": "https://conecta.rua.com.br/mcp/ruacio"
+    }
+  }
+}

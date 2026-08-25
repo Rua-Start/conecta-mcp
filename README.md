@@ -1,30 +1,29 @@
 # Conecta.RUÁ para agentes de código
 
-Plugin oficial que conecta Codex, Claude Code e Cursor aos servidores MCP especializados do Conecta.RUÁ.
+Plugins oficiais que conectam Codex, Claude Code e Cursor aos servidores MCP do Conecta.RUÁ.
 
-## Módulos incluídos
+## Formas de instalação
 
-- Core
-- Scrum
-- Comercial
-- Serviços
-- Contratos
-- Crachás
-- Manual
+- **`conecta`**: pacote completo recomendado, com todos os nove servidores especializados.
+- **`conecta-<domínio>`**: pacote mínimo, com somente o servidor escolhido.
 
-Todos os clientes recebem um servidor MCP por domínio:
+Use uma das formas. Instalar `conecta` junto com um plugin individual duplica o mesmo servidor e suas tools no cliente.
 
-```text
-/mcp/core
-/mcp/scrum
-/mcp/comercial
-/mcp/servicos
-/mcp/contratos
-/mcp/crachas
-/mcp/manual
-```
+| Plugin individual | Servidor MCP externo |
+|---|---|
+| `conecta-core` | `https://conecta.rua.com.br/mcp/core` |
+| `conecta-ruacio` | `https://conecta.rua.com.br/mcp/ruacio` |
+| `conecta-external-databases` | `https://conecta.rua.com.br/mcp/external-databases` |
+| `conecta-scrum` | `https://conecta.rua.com.br/mcp/scrum` |
+| `conecta-comercial` | `https://conecta.rua.com.br/mcp/comercial` |
+| `conecta-servicos` | `https://conecta.rua.com.br/mcp/servicos` |
+| `conecta-contratos` | `https://conecta.rua.com.br/mcp/contratos` |
+| `conecta-crachas` | `https://conecta.rua.com.br/mcp/crachas` |
+| `conecta-manual` | `https://conecta.rua.com.br/mcp/manual` |
 
-O plugin não contém tokens nem credenciais. Cada cliente abre o OAuth do Conecta por servidor e recebe apenas as ferramentas permitidas para o usuário autenticado. Autorize os servidores em sequência; o Cursor limita o catálogo a cerca de 50 tools por servidor, então o plugin não usa o endpoint agregado `/mcp/conecta`.
+As mesmas tools estão disponíveis no chat interno do Conecta conforme tenant, módulo, permissões e escopo do usuário. Externamente, cada endpoint usa OAuth e aplica as mesmas regras de autorização no servidor.
+
+O endpoint agregado `https://conecta.rua.com.br/mcp/conecta` continua disponível para integrações que desejem uma única conexão. O plugin completo usa os nove endpoints especializados para evitar truncamento de catálogos em clientes com paginação limitada.
 
 ## Codex
 
@@ -34,96 +33,76 @@ Adicione o marketplace:
 codex plugin marketplace add Rua-Start/conecta-mcp
 ```
 
-Instale o plugin:
+Instale o pacote completo:
 
 ```bash
 codex plugin add conecta@conecta-rua
 ```
 
-Quando solicitado, autorize o MCP no navegador. Para refazer a autorização manualmente:
+Ou instale apenas um domínio:
 
 ```bash
-codex mcp login conecta-core
+codex plugin add conecta-external-databases@conecta-rua
 ```
+
+Quando solicitado, conclua o OAuth no navegador. Para refazer a autorização de um servidor:
+
+```bash
+codex mcp login conecta-external-databases
+```
+
+Abra uma nova tarefa depois de instalar ou atualizar o plugin para recarregar o catálogo.
 
 ## Claude Code
 
-Dentro do Claude Code, adicione o marketplace:
-
 ```text
 /plugin marketplace add Rua-Start/conecta-mcp
-```
-
-Instale e recarregue o plugin:
-
-```text
 /plugin install conecta@conecta-rua
 /reload-plugins
 ```
 
-Abra `/mcp`, selecione cada servidor do plugin Conecta e conclua o login no navegador quando aparecer `Needs authentication`.
+Para uma instalação mínima, substitua `conecta` pelo nome do plugin individual. Em `/mcp`, conclua o login dos servidores instalados que aparecerem como `Needs authentication`.
 
 ## Cursor
 
-No Cursor, abra **Settings → Plugins → Marketplaces**, importe o repositório:
+Em **Settings → Plugins → Marketplaces**, importe:
 
 ```text
 https://github.com/Rua-Start/conecta-mcp
 ```
 
-Depois, instale **Conecta.RUÁ** e conclua o OAuth em **Settings → Tools & MCP** para cada servidor (`conecta-core`, `conecta-scrum`, etc.) quando indicar que precisa de login.
+Instale **Conecta.RUÁ** para todos os domínios ou somente o plugin individual desejado. Conclua o OAuth em **Settings → Tools & MCP**.
 
-Como alternativa de instalação direta do MCP, adicione esta configuração ao arquivo global `~/.cursor/mcp.json`:
+## Configuração MCP direta
+
+Qualquer cliente compatível pode usar um endpoint sem instalar o marketplace:
 
 ```json
 {
   "mcpServers": {
-    "conecta-core": {
+    "conecta-external-databases": {
       "type": "http",
-      "url": "https://conecta.rua.com.br/mcp/core"
-    },
-    "conecta-scrum": {
-      "type": "http",
-      "url": "https://conecta.rua.com.br/mcp/scrum"
-    },
-    "conecta-comercial": {
-      "type": "http",
-      "url": "https://conecta.rua.com.br/mcp/comercial"
-    },
-    "conecta-servicos": {
-      "type": "http",
-      "url": "https://conecta.rua.com.br/mcp/servicos"
-    },
-    "conecta-contratos": {
-      "type": "http",
-      "url": "https://conecta.rua.com.br/mcp/contratos"
-    },
-    "conecta-crachas": {
-      "type": "http",
-      "url": "https://conecta.rua.com.br/mcp/crachas"
-    },
-    "conecta-manual": {
-      "type": "http",
-      "url": "https://conecta.rua.com.br/mcp/manual"
+      "url": "https://conecta.rua.com.br/mcp/external-databases"
     }
   }
 }
 ```
+
+Troque o nome e a URL conforme a tabela. Para uma única conexão agregada, use `conecta` e `/mcp/conecta`.
 
 ## Estrutura multiplataforma
 
 - `.agents/plugins/marketplace.json`: marketplace do Codex.
 - `.claude-plugin/marketplace.json`: marketplace do Claude Code.
 - `.cursor-plugin/marketplace.json`: marketplace do Cursor.
-- `plugins/conecta/.codex-plugin/plugin.json`: manifesto do Codex.
-- `plugins/conecta/.claude-plugin/plugin.json`: manifesto do Claude Code.
-- `plugins/conecta/.cursor-plugin/plugin.json`: manifesto do Cursor.
-- `plugins/conecta/.mcp.json`: configuração MCP usada por Codex e Claude Code.
-- `plugins/conecta/mcp.json`: configuração MCP do plugin Cursor.
+- `plugins/conecta`: pacote completo.
+- `plugins/conecta-<domínio>`: pacotes individuais.
+- `.mcp.json`: configuração usada por Codex e Claude Code.
+- `mcp.json`: configuração usada pelo Cursor.
 
 ## Segurança
 
-- Nenhuma credencial é versionada.
-- O fluxo usa OAuth com PKCE e registro dinâmico de cliente.
-- Callbacks são limitados a loopback e aos callbacks oficiais dos clientes suportados.
-- O endpoint agregado `/mcp/conecta` permanece disponível para retrocompatibilidade, mas não é carregado pelo plugin.
+- Nenhuma credencial é versionada no plugin.
+- OAuth usa PKCE e registro dinâmico de cliente.
+- O servidor revalida tenant, módulo, permissões e escopo em cada tool.
+- O MCP de Bancos de Dados Externos nunca recebe nem altera senha ou chave privada TLS.

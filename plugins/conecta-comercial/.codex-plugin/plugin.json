@@ -1,0 +1,39 @@
+{
+  "name": "conecta-comercial",
+  "version": "0.1.0",
+  "description": "Clientes e operações comerciais autorizadas do Conecta.RUÁ.",
+  "author": {
+    "name": "Grupo RUÁ",
+    "url": "https://rua.com.br"
+  },
+  "homepage": "https://github.com/Rua-Start/conecta-mcp",
+  "repository": "https://github.com/Rua-Start/conecta-mcp",
+  "license": "Proprietary",
+  "keywords": [
+    "conecta",
+    "comercial",
+    "clientes",
+    "crm",
+    "mcp"
+  ],
+  "interface": {
+    "displayName": "Conecta.RUÁ — Comercial",
+    "shortDescription": "Clientes e operações comerciais autorizadas do Conecta.RUÁ.",
+    "longDescription": "Instale somente o MCP de Comercial para acessar clientes e operações comerciais autorizadas do conecta.ruá. As permissões continuam sendo validadas pelo Conecta.RUÁ.",
+    "developerName": "Grupo RUÁ",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "brandColor": "#286965",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "defaultPrompt": [
+      "Consulte os clientes disponíveis",
+      "Mostre as operações comerciais que posso usar"
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

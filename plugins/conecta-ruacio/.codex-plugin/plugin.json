@@ -1,0 +1,39 @@
+{
+  "name": "conecta-ruacio",
+  "version": "0.1.0",
+  "description": "Dashboards, relatórios e análises do Ruácio no Conecta.RUÁ.",
+  "author": {
+    "name": "Grupo RUÁ",
+    "url": "https://rua.com.br"
+  },
+  "homepage": "https://github.com/Rua-Start/conecta-mcp",
+  "repository": "https://github.com/Rua-Start/conecta-mcp",
+  "license": "Proprietary",
+  "keywords": [
+    "conecta",
+    "ruacio",
+    "dashboards",
+    "relatorios",
+    "mcp"
+  ],
+  "interface": {
+    "displayName": "Conecta.RUÁ — Ruácio",
+    "shortDescription": "Dashboards, relatórios e análises do Ruácio no Conecta.RUÁ.",
+    "longDescription": "Instale somente o MCP de Ruácio para acessar dashboards, relatórios e análises do ruácio no conecta.ruá. As permissões continuam sendo validadas pelo Conecta.RUÁ.",
+    "developerName": "Grupo RUÁ",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "brandColor": "#286965",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "defaultPrompt": [
+      "Liste meus dashboards e relatórios",
+      "Crie uma análise com as fontes disponíveis"
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

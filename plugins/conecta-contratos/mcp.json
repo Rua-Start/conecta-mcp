@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "conecta-contratos": {
+      "type": "http",
+      "url": "https://conecta.rua.com.br/mcp/contratos"
+    }
+  }
+}

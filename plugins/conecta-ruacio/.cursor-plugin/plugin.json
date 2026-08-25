@@ -1,8 +1,8 @@
 {
-  "name": "conecta",
-  "displayName": "Conecta.RUÁ",
-  "version": "0.5.0",
-  "description": "Acesse todos os servidores MCP especializados do Conecta.RUÁ.",
+  "name": "conecta-ruacio",
+  "displayName": "Conecta.RUÁ — Ruácio",
+  "version": "0.1.0",
+  "description": "Dashboards, relatórios e análises do Ruácio no Conecta.RUÁ.",
   "author": {
     "name": "Grupo RUÁ"
   },
@@ -13,13 +13,8 @@
   "keywords": [
     "conecta",
     "ruacio",
-    "database",
-    "scrum",
-    "comercial",
-    "servicos",
-    "contratos",
-    "crachas",
-    "manual",
+    "dashboards",
+    "relatorios",
     "mcp"
   ],
   "category": "productivity",
