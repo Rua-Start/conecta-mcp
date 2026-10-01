@@ -12,6 +12,10 @@
       "type": "http",
       "url": "https://conecta.rua.com.br/mcp/external-databases"
     },
+    "conecta-ai-knowledge": {
+      "type": "http",
+      "url": "https://conecta.rua.com.br/mcp/ai-knowledge"
+    },
     "conecta-scrum": {
       "type": "http",
       "url": "https://conecta.rua.com.br/mcp/scrum"

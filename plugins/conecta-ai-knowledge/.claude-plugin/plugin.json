@@ -1,7 +1,7 @@
 {
-  "name": "conecta",
-  "version": "0.6.0",
-  "description": "Acesso completo aos servidores MCP especializados do Conecta.RUÁ.",
+  "name": "conecta-ai-knowledge",
+  "version": "0.1.0",
+  "description": "Pesquisa e consulta autorizada às bases de Conhecimento IA.",
   "author": {
     "name": "Grupo RUÁ"
   },
@@ -10,15 +10,9 @@
   "license": "Proprietary",
   "keywords": [
     "conecta",
-    "ruacio",
-    "database",
     "conhecimento",
-    "scrum",
-    "comercial",
-    "servicos",
-    "contratos",
-    "crachas",
-    "manual",
+    "ia",
+    "busca",
     "mcp"
   ],
   "mcpServers": "./.mcp.json"

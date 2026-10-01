@@ -1,0 +1,39 @@
+{
+  "name": "conecta-ai-knowledge",
+  "version": "0.1.0",
+  "description": "Pesquisa e consulta autorizada às bases de Conhecimento IA.",
+  "author": {
+    "name": "Grupo RUÁ",
+    "url": "https://rua.com.br"
+  },
+  "homepage": "https://github.com/Rua-Start/conecta-mcp",
+  "repository": "https://github.com/Rua-Start/conecta-mcp",
+  "license": "Proprietary",
+  "keywords": [
+    "conecta",
+    "conhecimento",
+    "ia",
+    "busca",
+    "mcp"
+  ],
+  "interface": {
+    "displayName": "Conecta.RUÁ — Conhecimento IA",
+    "shortDescription": "Pesquisa e consulta autorizada às bases de Conhecimento IA.",
+    "longDescription": "Pesquise bases de Conhecimento IA autorizadas, leia conteúdos completos e gerencie conteúdos manuais quando permitido pelo Conecta.RUÁ.",
+    "developerName": "Grupo RUÁ",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "brandColor": "#286965",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "defaultPrompt": [
+      "Liste as bases de Conhecimento IA disponíveis",
+      "Pesquise nas minhas bases de Conhecimento IA"
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

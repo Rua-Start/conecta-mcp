@@ -4,7 +4,7 @@ Plugins oficiais que conectam Codex, Claude Code e Cursor aos servidores MCP do 
 
 ## Formas de instalação
 
-- **`conecta`**: pacote completo recomendado, com todos os nove servidores especializados.
+- **`conecta`**: pacote completo recomendado, com todos os dez servidores especializados.
 - **`conecta-<domínio>`**: pacote mínimo, com somente o servidor escolhido.
 
 Use uma das formas. Instalar `conecta` junto com um plugin individual duplica o mesmo servidor e suas tools no cliente.
@@ -14,6 +14,7 @@ Use uma das formas. Instalar `conecta` junto com um plugin individual duplica o 
 | `conecta-core` | `https://conecta.rua.com.br/mcp/core` |
 | `conecta-ruacio` | `https://conecta.rua.com.br/mcp/ruacio` |
 | `conecta-external-databases` | `https://conecta.rua.com.br/mcp/external-databases` |
+| `conecta-ai-knowledge` | `https://conecta.rua.com.br/mcp/ai-knowledge` |
 | `conecta-scrum` | `https://conecta.rua.com.br/mcp/scrum` |
 | `conecta-comercial` | `https://conecta.rua.com.br/mcp/comercial` |
 | `conecta-servicos` | `https://conecta.rua.com.br/mcp/servicos` |
@@ -23,7 +24,7 @@ Use uma das formas. Instalar `conecta` junto com um plugin individual duplica o 
 
 As mesmas tools estão disponíveis no chat interno do Conecta conforme tenant, módulo, permissões e escopo do usuário. Externamente, cada endpoint usa OAuth e aplica as mesmas regras de autorização no servidor.
 
-O endpoint agregado `https://conecta.rua.com.br/mcp/conecta` continua disponível para integrações que desejem uma única conexão. O plugin completo usa os nove endpoints especializados para evitar truncamento de catálogos em clientes com paginação limitada.
+O endpoint agregado `https://conecta.rua.com.br/mcp/conecta` continua disponível para integrações que desejem uma única conexão. O plugin completo usa os dez endpoints especializados para evitar truncamento de catálogos em clientes com paginação limitada.
 
 ## Codex
 

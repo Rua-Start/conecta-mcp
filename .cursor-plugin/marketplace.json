@@ -28,6 +28,11 @@
       "description": "Configuração, catálogo e consultas seguras em bancos externos."
     },
     {
+      "name": "conecta-ai-knowledge",
+      "source": "plugins/conecta-ai-knowledge",
+      "description": "Pesquisa e consulta autorizada às bases de Conhecimento IA."
+    },
+    {
       "name": "conecta-scrum",
       "source": "plugins/conecta-scrum",
       "description": "Projetos, sprints, tasks e conhecimento do Scrum."

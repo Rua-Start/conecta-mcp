@@ -1,8 +1,8 @@
 {
-  "name": "conecta",
-  "displayName": "Conecta.RUÁ",
-  "version": "0.6.0",
-  "description": "Acesse todos os servidores MCP especializados do Conecta.RUÁ.",
+  "name": "conecta-ai-knowledge",
+  "displayName": "Conecta.RUÁ — Conhecimento IA",
+  "version": "0.1.0",
+  "description": "Pesquisa e consulta autorizada às bases de Conhecimento IA.",
   "author": {
     "name": "Grupo RUÁ"
   },
@@ -12,15 +12,9 @@
   "logo": "assets/logo.png",
   "keywords": [
     "conecta",
-    "ruacio",
-    "database",
     "conhecimento",
-    "scrum",
-    "comercial",
-    "servicos",
-    "contratos",
-    "crachas",
-    "manual",
+    "ia",
+    "busca",
     "mcp"
   ],
   "category": "productivity",
