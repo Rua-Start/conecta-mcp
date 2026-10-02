@@ -8,7 +8,7 @@
     {
       "name": "conecta",
       "source": "./plugins/conecta",
-      "description": "Acesse todos os MCPs especializados do Conecta.RUÁ."
+      "description": "Acesse todos os domínios do Conecta.RUÁ por um único servidor MCP."
     },
     {
       "name": "conecta-core",

@@ -1,7 +1,7 @@
 {
   "name": "conecta",
-  "version": "0.6.0",
-  "description": "Acesso completo aos servidores MCP especializados do Conecta.RUÁ.",
+  "version": "0.7.0",
+  "description": "Acesso completo ao Conecta.RUÁ por um único servidor MCP.",
   "author": {
     "name": "Grupo RUÁ"
   },

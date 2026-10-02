@@ -1,7 +1,7 @@
 {
   "name": "conecta",
-  "version": "0.6.0",
-  "description": "Acesso completo aos servidores MCP especializados do Conecta.RUÁ.",
+  "version": "0.7.0",
+  "description": "Acesso completo ao Conecta.RUÁ por um único servidor MCP.",
   "author": {
     "name": "Grupo RUÁ",
     "url": "https://rua.com.br"
@@ -24,8 +24,8 @@
   ],
   "interface": {
     "displayName": "Conecta.RUÁ",
-    "shortDescription": "Todos os MCPs especializados do Conecta",
-    "longDescription": "Consulte e gerencie Core, Ruácio, Bancos de Dados Externos, Conhecimento IA, Scrum, Comercial, Serviços, Contratos, Crachás e Manual em uma única instalação.",
+    "shortDescription": "Conecta em um único MCP",
+    "longDescription": "Consulte e gerencie Core, Ruácio, Bancos de Dados Externos, Conhecimento IA, Scrum, Comercial, Serviços, Contratos, Crachás e Manual por uma única conexão MCP com OAuth.",
     "developerName": "Grupo RUÁ",
     "category": "Productivity",
     "capabilities": [
